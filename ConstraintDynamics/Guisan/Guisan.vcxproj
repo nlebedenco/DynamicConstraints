@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="actionevent.cpp" />
+    <ClCompile Include="basiccontainer.cpp" />
+    <ClCompile Include="cliprectangle.cpp" />
+    <ClCompile Include="color.cpp" />
+    <ClCompile Include="defaultfont.cpp" />
+    <ClCompile Include="event.cpp" />
+    <ClCompile Include="exception.cpp" />
+    <ClCompile Include="focushandler.cpp" />
+    <ClCompile Include="font.cpp" />
+    <ClCompile Include="genericinput.cpp" />
+    <ClCompile Include="graphics.cpp" />
+    <ClCompile Include="gui.cpp" />
+    <ClCompile Include="guisan.cpp" />
+    <ClCompile Include="image.cpp" />
+    <ClCompile Include="imagefont.cpp" />
+    <ClCompile Include="inputevent.cpp" />
+    <ClCompile Include="key.cpp" />
+    <ClCompile Include="keyevent.cpp" />
+    <ClCompile Include="keyinput.cpp" />
+    <ClCompile Include="mouseevent.cpp" />
+    <ClCompile Include="mouseinput.cpp" />
+    <ClCompile Include="rectangle.cpp" />
+    <ClCompile Include="sdl\sdl.cpp" />
+    <ClCompile Include="sdl\sdlgraphics.cpp" />
+    <ClCompile Include="sdl\sdlimage.cpp" />
+    <ClCompile Include="sdl\sdlimageloader.cpp" />
+    <ClCompile Include="sdl\sdlinput.cpp" />
+    <ClCompile Include="selectionevent.cpp" />
+    <ClCompile Include="widget.cpp" />
+    <ClCompile Include="widgets\button.cpp" />
+    <ClCompile Include="widgets\checkbox.cpp" />
+    <ClCompile Include="widgets\container.cpp" />
+    <ClCompile Include="widgets\dropdown.cpp" />
+    <ClCompile Include="widgets\icon.cpp" />
+    <ClCompile Include="widgets\imagebutton.cpp" />
+    <ClCompile Include="widgets\label.cpp" />
+    <ClCompile Include="widgets\listbox.cpp" />
+    <ClCompile Include="widgets\radiobutton.cpp" />
+    <ClCompile Include="widgets\scrollarea.cpp" />
+    <ClCompile Include="widgets\slider.cpp" />
+    <ClCompile Include="widgets\tab.cpp" />
+    <ClCompile Include="widgets\tabbedarea.cpp" />
+    <ClCompile Include="widgets\textbox.cpp" />
+    <ClCompile Include="widgets\textfield.cpp" />
+    <ClCompile Include="widgets\window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="actionevent.hpp" />
+    <ClInclude Include="actionlistener.hpp" />
+    <ClInclude Include="basiccontainer.hpp" />
+    <ClInclude Include="cliprectangle.hpp" />
+    <ClInclude Include="color.hpp" />
+    <ClInclude Include="deathlistener.hpp" />
+    <ClInclude Include="defaultfont.hpp" />
+    <ClInclude Include="event.hpp" />
+    <ClInclude Include="exception.hpp" />
+    <ClInclude Include="focushandler.hpp" />
+    <ClInclude Include="focuslistener.hpp" />
+    <ClInclude Include="font.hpp" />
+    <ClInclude Include="genericinput.hpp" />
+    <ClInclude Include="glut.hpp" />
+    <ClInclude Include="graphics.hpp" />
+    <ClInclude Include="gui.hpp" />
+    <ClInclude Include="guisan.hpp" />
+    <ClInclude Include="image.hpp" />
+    <ClInclude Include="imagefont.hpp" />
+    <ClInclude Include="imageloader.hpp" />
+    <ClInclude Include="input.hpp" />
+    <ClInclude Include="inputevent.hpp" />
+    <ClInclude Include="key.hpp" />
+    <ClInclude Include="keyevent.hpp" />
+    <ClInclude Include="keyinput.hpp" />
+    <ClInclude Include="keylistener.hpp" />
+    <ClInclude Include="listmodel.hpp" />
+    <ClInclude Include="mouseevent.hpp" />
+    <ClInclude Include="mouseinput.hpp" />
+    <ClInclude Include="mouselistener.hpp" />
+    <ClInclude Include="opengl.hpp" />
+    <ClInclude Include="platform.hpp" />
+    <ClInclude Include="rectangle.hpp" />
+    <ClInclude Include="sdl.hpp" />
+    <ClInclude Include="sdl\sdlgraphics.hpp" />
+    <ClInclude Include="sdl\sdlimage.hpp" />
+    <ClInclude Include="sdl\sdlimageloader.hpp" />
+    <ClInclude Include="sdl\sdlinput.hpp" />
+    <ClInclude Include="sdl\sdlpixel.hpp" />
+    <ClInclude Include="selectionevent.hpp" />
+    <ClInclude Include="selectionlistener.hpp" />
+    <ClInclude Include="widget.hpp" />
+    <ClInclude Include="widgetlistener.hpp" />
+    <ClInclude Include="widgets\button.hpp" />
+    <ClInclude Include="widgets\checkbox.hpp" />
+    <ClInclude Include="widgets\container.hpp" />
+    <ClInclude Include="widgets\dropdown.hpp" />
+    <ClInclude Include="widgets\icon.hpp" />
+    <ClInclude Include="widgets\imagebutton.hpp" />
+    <ClInclude Include="widgets\label.hpp" />
+    <ClInclude Include="widgets\listbox.hpp" />
+    <ClInclude Include="widgets\radiobutton.hpp" />
+    <ClInclude Include="widgets\scrollarea.hpp" />
+    <ClInclude Include="widgets\slider.hpp" />
+    <ClInclude Include="widgets\tab.hpp" />
+    <ClInclude Include="widgets\tabbedarea.hpp" />
+    <ClInclude Include="widgets\textbox.hpp" />
+    <ClInclude Include="widgets\textfield.hpp" />
+    <ClInclude Include="widgets\window.hpp" />
+    <ClInclude Include="x.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="COPYING" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{77999BDD-DE21-4D4A-9232-E2CF3BD81A5E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Guisan</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)..\SDL2-2.0.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
