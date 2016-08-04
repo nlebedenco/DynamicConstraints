@@ -151,12 +151,14 @@ xcopy /d /y "$(ProjectDir)Resources\*.*" "$(OutDir)"</Command>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
-    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="Rod.cpp" />
+    <ClCompile Include="Point.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
-    <ClInclude Include="Node.h" />
+    <ClInclude Include="Rod.h" />
+    <ClInclude Include="Point.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.vcxproj">
@@ -165,6 +167,11 @@ xcopy /d /y "$(ProjectDir)Resources\*.*" "$(OutDir)"</Command>
     <ProjectReference Include="..\Guisan\Guisan.vcxproj">
       <Project>{77999bdd-de21-4d4a-9232-e2cf3bd81a5e}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\fixedfont.bmp" />
+    <Image Include="Resources\normal.bmp" />
+    <Image Include="Resources\selected.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

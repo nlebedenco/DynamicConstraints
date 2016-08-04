@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <set>
 
 #include <SDL.h>
 #include <SDL_image.h>
@@ -7,7 +8,8 @@
 #include "Guisan/guisan.hpp"
 #include "Guisan/sdl.hpp"
 
-#include "Node.h"
+#include "Point.h"
+#include "Rod.h"
 
 class Application
 {
@@ -16,6 +18,18 @@ class Application
 	static const int SCREEN_HEIGHT = 600;
 
 	static const char* const FONT_FILENAME;
+
+	std::string title;
+	bool terminated;
+	float fixedDeltaTime;
+	Point* dragPoint;
+	float gravity;
+	float conservation;
+
+	typedef std::set<Rod*> rodlist;
+	rodlist rods;
+
+	int fps;
 
 	// SDL
 	SDL_Window* sdlWindow;
@@ -32,6 +46,13 @@ class Application
 	gcn::ImageFont* guiFont;				// Font
 	gcn::Container* guiTop;					// Top container
 
+	// Widgets
+	gcn::Label* lblFPS;
+	gcn::CheckBox* chkGravity;
+	gcn::TextField* textGravity;
+	gcn::CheckBox* chkConservation;
+	gcn::TextField* textConservation;
+
 	void SdlOpen();
 
 	void GuiOpen();
@@ -40,8 +61,16 @@ class Application
 
 	void SdlClose();
 
+	void createWidgets();
+
+	void updateWidgets();
+
+	void destroyWidgets();
+
+	Point* findPointAt(const Vector2& position);
+
 public:
-	Application();
+	Application(const std::string& title, float fixedDeltaTime = 0.022);
 
 	~Application();
 

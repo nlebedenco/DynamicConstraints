@@ -11,7 +11,7 @@ int main(int argc, char* argv[])
 {
 	atexit(pause);
 
-	Application app;
+	Application app("Rod Simulator");
 	return app.Run();
 }
 
