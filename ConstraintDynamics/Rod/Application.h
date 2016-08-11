@@ -47,6 +47,7 @@ class Application
 	gcn::Container* guiTop;					// Top container
 
 	// Widgets
+	gcn::Label* lblDescription;
 	gcn::Label* lblFPS;
 	gcn::CheckBox* chkGravity;
 	gcn::TextField* textGravity;

@@ -121,6 +121,7 @@ void
 Application::
 createWidgets()
 {
+	lblDescription = new gcn::Label("Click and drag one of the black dots using the left mouse button");
 	lblFPS = new gcn::Label("FPS:");
 	chkGravity = new gcn::CheckBox("Gravity:", true);
 	textGravity = new gcn::TextField(std::format("%g", gravity));
@@ -130,13 +131,12 @@ createWidgets()
 	textConservation = new gcn::TextField(std::format("%g", conservation));
 	textConservation->setSize(80, 18);
 
-	guiTop->add(lblFPS, 8, 8);
-	guiTop->add(chkGravity, 8, 28);
-	guiTop->add(textGravity, 76, 28);
-	guiTop->add(chkConservation, 8, 56);
-	guiTop->add(textConservation, 104, 56);
-	
-
+	guiTop->add(lblDescription, 8, 8);
+	guiTop->add(lblFPS, 8, 28);
+	guiTop->add(chkGravity, 8, 48);
+	guiTop->add(textGravity, 76, 48);
+	guiTop->add(chkConservation, 8, 76);
+	guiTop->add(textConservation, 104, 76);
 }
 
 void
@@ -180,6 +180,7 @@ void
 Application::
 destroyWidgets()
 {
+	delete lblDescription;
 	delete lblFPS;
 	delete chkGravity;
 	delete textGravity;
@@ -221,7 +222,8 @@ Application(const std::string& title, float fixedDeltaTime)
 	  gui(0),
 	  guiFont(0),
 	  guiTop(0),
-	  lblFPS(0),
+      lblDescription(0),
+  	  lblFPS(0),
 	  chkGravity(0),
 	  textGravity(0),
 	  chkConservation(0),
