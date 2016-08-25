@@ -61,7 +61,7 @@ update(float deltaTime, const Vector2& gravity, float conservation, float elasti
 			float deltaLength = delta.getMagnitude();
 			float ratio = (deltaLength - length12) / deltaLength;
 			
-			V2->move(delta * ratio * -1);
+			V2->move(delta * ratio * -1 * elasticity);
 		}
 
 		
@@ -71,6 +71,7 @@ update(float deltaTime, const Vector2& gravity, float conservation, float elasti
 			V3->update(deltaTime, gravity, conservation);
 
 			// V2 - V3
+			if (V2)
 			{
 				Vector2 delta = V3->getPosition() - V2->getPosition();
 				float deltaLength = delta.getMagnitude();
